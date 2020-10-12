@@ -7,17 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A22B7692534AA590090A532 /* iDriveLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A22B7652534AA460090A532 /* iDriveLibrary.framework */; };
+		6A22B76A2534AA590090A532 /* iDriveLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A22B7652534AA460090A532 /* iDriveLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6AE026D62531BF2500554A0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE026D52531BF2500554A0F /* AppDelegate.swift */; };
 		6AE026D82531BF2500554A0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE026D72531BF2500554A0F /* SceneDelegate.swift */; };
-		6AE026DA2531BF2500554A0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE026D92531BF2500554A0F /* ViewController.swift */; };
+		6AE026DA2531BF2500554A0F /* PinterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE026D92531BF2500554A0F /* PinterestViewController.swift */; };
 		6AE026DD2531BF2500554A0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE026DB2531BF2500554A0F /* Main.storyboard */; };
 		6AE026DF2531BF2700554A0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE026DE2531BF2700554A0F /* Assets.xcassets */; };
 		6AE026E22531BF2700554A0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE026E02531BF2700554A0F /* LaunchScreen.storyboard */; };
 		6AE026ED2531BF2800554A0F /* iDrivePinterestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE026EC2531BF2800554A0F /* iDrivePinterestTests.swift */; };
 		6AE026F82531BF2800554A0F /* iDrivePinterestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE026F72531BF2800554A0F /* iDrivePinterestUITests.swift */; };
+		6AE027102531C10B00554A0F /* iDriveConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE0270F2531C10B00554A0F /* iDriveConstants.swift */; };
+		6AE0271A2531C2FA00554A0F /* PinterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE027182531C2FA00554A0F /* PinterestCollectionViewCell.swift */; };
+		6AE0271B2531C2FA00554A0F /* PinterestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE027192531C2FA00554A0F /* PinterestCollectionViewCell.xib */; };
+		6AE0272D253221C700554A0F /* PasteBinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE0272C253221C700554A0F /* PasteBinModel.swift */; };
+		6AE027322532226500554A0F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE027312532226500554A0F /* UserModel.swift */; };
+		6AE027372532227F00554A0F /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE027362532227F00554A0F /* ProfileImage.swift */; };
+		6AE0273C2532229300554A0F /* LinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE0273B2532229300554A0F /* LinkModel.swift */; };
+		6AE02741253222A900554A0F /* UrlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE02740253222A900554A0F /* UrlModel.swift */; };
+		6AE0274C253224A500554A0F /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE0274B253224A500554A0F /* CategoryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6A22B7642534AA460090A532 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A22B75F2534AA460090A532 /* iDriveLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6AE027822533945200554A0F;
+			remoteInfo = iDriveLibrary;
+		};
+		6A22B7662534AA460090A532 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A22B75F2534AA460090A532 /* iDriveLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6AE0278B2533945200554A0F;
+			remoteInfo = iDriveLibraryTests;
+		};
 		6AE026E92531BF2800554A0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6AE026CA2531BF2500554A0F /* Project object */;
@@ -34,11 +59,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6A22B76B2534AA590090A532 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6A22B76A2534AA590090A532 /* iDriveLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6A22B75F2534AA460090A532 /* iDriveLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iDriveLibrary.xcodeproj; path = ../../iDriveLibrary/iDriveLibrary.xcodeproj; sourceTree = "<group>"; };
 		6AE026D22531BF2500554A0F /* iDrivePinterest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDrivePinterest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE026D52531BF2500554A0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AE026D72531BF2500554A0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6AE026D92531BF2500554A0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6AE026D92531BF2500554A0F /* PinterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestViewController.swift; sourceTree = "<group>"; };
 		6AE026DC2531BF2500554A0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6AE026DE2531BF2700554A0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AE026E12531BF2700554A0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +89,15 @@
 		6AE026F32531BF2800554A0F /* iDrivePinterestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDrivePinterestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE026F72531BF2800554A0F /* iDrivePinterestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDrivePinterestUITests.swift; sourceTree = "<group>"; };
 		6AE026F92531BF2800554A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AE0270F2531C10B00554A0F /* iDriveConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDriveConstants.swift; sourceTree = "<group>"; };
+		6AE027182531C2FA00554A0F /* PinterestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestCollectionViewCell.swift; sourceTree = "<group>"; };
+		6AE027192531C2FA00554A0F /* PinterestCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PinterestCollectionViewCell.xib; sourceTree = "<group>"; };
+		6AE0272C253221C700554A0F /* PasteBinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteBinModel.swift; sourceTree = "<group>"; };
+		6AE027312532226500554A0F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		6AE027362532227F00554A0F /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
+		6AE0273B2532229300554A0F /* LinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkModel.swift; sourceTree = "<group>"; };
+		6AE02740253222A900554A0F /* UrlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlModel.swift; sourceTree = "<group>"; };
+		6AE0274B253224A500554A0F /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A22B7692534AA590090A532 /* iDriveLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +126,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A22B7602534AA460090A532 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A22B7652534AA460090A532 /* iDriveLibrary.framework */,
+				6A22B7672534AA460090A532 /* iDriveLibraryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A22B7682534AA590090A532 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A22B76E2534AAAF0090A532 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6AE026D92531BF2500554A0F /* PinterestViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		6AE026C92531BF2500554A0F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +157,7 @@
 				6AE026EB2531BF2800554A0F /* iDrivePinterestTests */,
 				6AE026F62531BF2800554A0F /* iDrivePinterestUITests */,
 				6AE026D32531BF2500554A0F /* Products */,
+				6A22B7682534AA590090A532 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +174,15 @@
 		6AE026D42531BF2500554A0F /* iDrivePinterest */ = {
 			isa = PBXGroup;
 			children = (
+				6A22B75F2534AA460090A532 /* iDriveLibrary.xcodeproj */,
+				6AE0270B2531BF9C00554A0F /* PinterestView */,
 				6AE026D52531BF2500554A0F /* AppDelegate.swift */,
 				6AE026D72531BF2500554A0F /* SceneDelegate.swift */,
-				6AE026D92531BF2500554A0F /* ViewController.swift */,
 				6AE026DB2531BF2500554A0F /* Main.storyboard */,
 				6AE026DE2531BF2700554A0F /* Assets.xcassets */,
 				6AE026E02531BF2700554A0F /* LaunchScreen.storyboard */,
 				6AE026E32531BF2700554A0F /* Info.plist */,
+				6AE0270F2531C10B00554A0F /* iDriveConstants.swift */,
 			);
 			path = iDrivePinterest;
 			sourceTree = "<group>";
@@ -128,6 +205,38 @@
 			path = iDrivePinterestUITests;
 			sourceTree = "<group>";
 		};
+		6AE0270B2531BF9C00554A0F /* PinterestView */ = {
+			isa = PBXGroup;
+			children = (
+				6A22B76E2534AAAF0090A532 /* ViewControllers */,
+				6AE0272B2532207E00554A0F /* Models */,
+				6AE027172531C2D400554A0F /* Cells */,
+			);
+			path = PinterestView;
+			sourceTree = "<group>";
+		};
+		6AE027172531C2D400554A0F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6AE027182531C2FA00554A0F /* PinterestCollectionViewCell.swift */,
+				6AE027192531C2FA00554A0F /* PinterestCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6AE0272B2532207E00554A0F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6AE0272C253221C700554A0F /* PasteBinModel.swift */,
+				6AE027312532226500554A0F /* UserModel.swift */,
+				6AE027362532227F00554A0F /* ProfileImage.swift */,
+				6AE0273B2532229300554A0F /* LinkModel.swift */,
+				6AE02740253222A900554A0F /* UrlModel.swift */,
+				6AE0274B253224A500554A0F /* CategoryModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +247,7 @@
 				6AE026CE2531BF2500554A0F /* Sources */,
 				6AE026CF2531BF2500554A0F /* Frameworks */,
 				6AE026D02531BF2500554A0F /* Resources */,
+				6A22B76B2534AA590090A532 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +327,12 @@
 			mainGroup = 6AE026C92531BF2500554A0F;
 			productRefGroup = 6AE026D32531BF2500554A0F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6A22B7602534AA460090A532 /* Products */;
+					ProjectRef = 6A22B75F2534AA460090A532 /* iDriveLibrary.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6AE026D12531BF2500554A0F /* iDrivePinterest */,
@@ -226,12 +342,30 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		6A22B7652534AA460090A532 /* iDriveLibrary.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = iDriveLibrary.framework;
+			remoteRef = 6A22B7642534AA460090A532 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6A22B7672534AA460090A532 /* iDriveLibraryTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = iDriveLibraryTests.xctest;
+			remoteRef = 6A22B7662534AA460090A532 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		6AE026D02531BF2500554A0F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6AE026E22531BF2700554A0F /* LaunchScreen.storyboard in Resources */,
+				6AE0271B2531C2FA00554A0F /* PinterestCollectionViewCell.xib in Resources */,
 				6AE026DF2531BF2700554A0F /* Assets.xcassets in Resources */,
 				6AE026DD2531BF2500554A0F /* Main.storyboard in Resources */,
 			);
@@ -258,9 +392,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AE026DA2531BF2500554A0F /* ViewController.swift in Sources */,
+				6AE0271A2531C2FA00554A0F /* PinterestCollectionViewCell.swift in Sources */,
+				6AE0274C253224A500554A0F /* CategoryModel.swift in Sources */,
+				6AE027102531C10B00554A0F /* iDriveConstants.swift in Sources */,
+				6AE026DA2531BF2500554A0F /* PinterestViewController.swift in Sources */,
+				6AE0272D253221C700554A0F /* PasteBinModel.swift in Sources */,
+				6AE027372532227F00554A0F /* ProfileImage.swift in Sources */,
+				6AE027322532226500554A0F /* UserModel.swift in Sources */,
 				6AE026D62531BF2500554A0F /* AppDelegate.swift in Sources */,
 				6AE026D82531BF2500554A0F /* SceneDelegate.swift in Sources */,
+				6AE02741253222A900554A0F /* UrlModel.swift in Sources */,
+				6AE0273C2532229300554A0F /* LinkModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +581,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KUYUA8T74A;
 				INFOPLIST_FILE = iDrivePinterest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +601,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KUYUA8T74A;
 				INFOPLIST_FILE = iDrivePinterest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
